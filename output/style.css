@@ -1,0 +1,42 @@
+.wel-text {
+    color: red;
+}
+
+.input-group {
+    position: relative;
+    margin: 20px 0px;
+}
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #000;
+    padding: 0px 5px;
+    pointer-events: none;
+    transition: .2s;
+}
+.input-group input {
+    width: 320px;
+    height: 40px;
+    font-size: 1rem;
+    color: #000;
+    padding: 0rem 10px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 5px;
+}
+.input-group input:focus~label,
+.input-group input:valid~label {
+    top: 0;
+    font-size: 12px;
+    color: teal;
+    background-color: #fff;
+}
+
+.input-group input:focus {    
+    border: 2px solid teal;
+}
+
